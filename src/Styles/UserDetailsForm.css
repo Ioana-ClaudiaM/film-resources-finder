@@ -1,0 +1,38 @@
+.user-details-form{
+    margin-left: 22%;
+    margin-top: 20px;
+}
+.form-columns {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    font-size: 18px;
+    color: #000;
+}
+
+.form-column,.form-column1{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-columns input{
+    margin-left: 1px;
+    height: 40px;
+    width: 100%;
+}
+
+.form-columns label{
+    margin-top: 5px;
+}
+
+.header-informatii-utile{
+    margin-bottom: 5px;
+  color: #000000;
+  margin-top: 30px;
+  font-family: 'Poppins';
+  }
+
+  .text-skill{
+    margin-bottom: 0;
+  }

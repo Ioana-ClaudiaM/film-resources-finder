@@ -1,0 +1,230 @@
+
+.container-aplicari{
+  background-image: url('../Styles/Backgrounds/woman-with-3d-glasses-holding-bucket-with-popcorn-with-copy-space.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.accept-icon {
+  color: green;
+  cursor: pointer;
+  font-size: 30px;
+  transition: transform 0.2s;
+}
+
+.accept-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Stilizare pentru iconul X (roșu) */
+.reject-icon {
+  color: red;
+  cursor: pointer;
+  font-size: 30px;
+  transition: transform 0.2s;
+}
+
+.reject-icon:hover {
+  transform: scale(1.2);
+}
+
+.buttons-aplicari {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.vezi-detalii-aplicare-actor {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.vezi-detalii-aplicare-actor:hover {
+  background-color: #0056b3;
+}
+
+.card-aplicare {
+  background-color: #fffafae0;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.card-aplicare:hover {
+  transform: translateY(-5px);
+}
+
+.aplicari-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header-aplicari {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #333;
+}
+
+.status-aplicare {
+  font-weight: bold;
+}
+
+.status-aplicare.trimisa {
+  color: rgb(3, 3, 143);
+}
+
+.status-aplicare.acceptata {
+  color: green;
+}
+
+.status-aplicare.respinsa {
+  color: rgb(122, 2, 2);
+}
+
+.status-aplicare.vizualizata {
+  color: orange;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 2rem;
+  width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  border: 10px solid #79abe0;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Poppins';
+}
+
+.popup-header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #d7b714;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.5px;
+  text-decoration: underline;
+}
+
+.popup-header button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.popup-body label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-family: 'Poppins';
+}
+
+.popup-body input,
+.popup-body textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.popup-body textarea {
+  resize: none;
+}
+
+.popup-footer {
+  text-align: right;
+}
+
+.popup-footer button {
+  background: #79abe0;
+  color: rgb(11, 11, 11);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Poppins';
+  font-weight: bold;
+}
+
+.popup-footer button:hover {
+  background: #84cff5;
+}
+
+.popup-overla2y {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content2 {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.popup-header2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.popup-header2 h2 {
+  margin: 0;
+}
+
+.popup-body2 {
+  margin-top: 20px;
+}
+
+.popup-body2 p {
+  margin: 10px 0;
+}

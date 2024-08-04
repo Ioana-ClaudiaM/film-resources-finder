@@ -1,0 +1,261 @@
+.formular-aplicare {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    min-height: 100vh;
+}
+
+.formular-aplicare-film {
+    min-height: 100%;
+    background-image: url('../Styles/Backgrounds/top-view-cinema-elements-yellow-background-with-copy-space.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.header-aplicare-rol {
+    margin-top: 100px;
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Poppins';
+
+}
+
+.header-aplicare-rol h1{
+    font-size: 35px;
+}
+
+.header-aplicare-rol h2{
+    font-size: 25px;
+}
+
+.span-formular-rol{
+    color: #e1c84a;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+}
+
+.span-formular-titlu{
+    color: #e1c84a;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+
+}
+
+.formular-rol{
+    background-color: #7fb0e4;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    height: 750px;
+}
+
+.buttons-section-rol{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-top: 18%;
+    padding-bottom: 5%;
+    background-image: url('./Backgrounds/arrangement-cinema-elements-black-background-with-copy-space.jpg');
+    background-position: center;
+    background-size: cover;     padding-left: 2%;
+    
+}
+
+
+
+.line- {
+    border-left: 1px solid rgb(255, 255, 255);
+    height: 80px;
+    margin: 0px 8%;
+    padding: 0;
+}
+
+.buttons-section-rol button{
+    width: 15%;
+  height: 40px;
+  border-radius: 50px;
+  color: #f9f8f8;
+  font-weight: bold;
+  border: none;
+  background-color: #ffffff93;
+}
+
+.button-title-section{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-weight: bold;
+    font-size: 13px;
+    align-items: center;
+    color: #f9f8f8;
+}
+
+.formular-rol-section{
+    padding-left: 10%;
+    padding-right: 8%;
+    background-color: #ffffff;
+    padding-top: 5%;
+    width: 90%;
+    position: relative;
+}
+
+.paragraf-motivatie{
+    font-family: 'system-ui';
+    font-weight: 300;
+  }
+
+.form-section-rol{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.textfield-formular{
+width: 50%;
+}
+
+.form-section-1,.form-section-2{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.buttons-form{
+    margin-top: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttons-form button,.delete-link-button,.add-link-button{
+    background-color: rgb(255, 255, 255);
+  width: fit-content;
+  padding: 5px;
+  color: black;
+  border-radius: 20px;
+}
+
+.rol-bifa{
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.rol-bifa-container {
+    display: flex;
+    flex-direction: column; /* Afișează butoanele sub formă de coloană */
+    gap: 10px; /* Spațiu între butoane */
+    align-items: flex-end; /* Aliniază butoanele la partea de jos a containerului */
+    width: 200px;
+}
+
+.section-button.active {
+    background-color: rgb(113, 165, 243); /* Schimbă culoarea de fundal a butonului */
+    color: white;
+}
+
+.line-active {
+    border-left: 2px solid rgb(82, 165, 234);
+    height: 80px;
+    margin: 0px 8%;
+    padding: 0;
+}
+
+.introducere-motivatie{
+    height: 70px;
+    resize: none;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.blur-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundalul este semitransparent pentru un efect de blur */
+    backdrop-filter: blur(8px); /* Aplică efectul de blur */
+    z-index: 999; /* Asigură că este afișat deasupra conținutului */
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    z-index: 1000; /* Asigură că este afișat deasupra fundalului blurat */
+  }
+
+  .incarcare-cv{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .incarcare-linkuri{
+    margin-top: 60px;
+  }
+
+  .delete-link-button{
+    margin-left: 10px;
+  }
+
+  .add-link-button{
+    margin-top: 10px;
+  }
+
+  .linkuri{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .buttons-form-final {
+    bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px; /* Ajustați spațiul dintre butoane */
+    position: absolute;
+}
+
+.buttons-form-final button {
+    background-color: rgb(255, 255, 255);
+    width: fit-content;
+    padding: 5px;
+    color: black;
+    border-radius: 20px;
+}
+
+.textfield-formular{
+    color:#e1c84a;
+}
+
+.intrebari-specifice{
+    font-family: 'system-ui';
+    font-weight: 400;
+}
+
+.mai-departe{
+margin-left: 80%;
+}
+
+.info-cv-pdf{
+    margin-top: 30px;
+    font-family: 'system-ui';
+    font-weight: 300;
+}

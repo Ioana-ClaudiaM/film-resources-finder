@@ -1,0 +1,87 @@
+.functionalitati-header {
+  position: relative; /* schimbare aici */
+  font-family: 'Abril Fatface';
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.functionalitati-container {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(48, 48, 48, 0.7);
+  color:blanchedalmond;
+  padding-left: 20px;
+}
+
+.coloana1,
+.coloana2 {
+  width: 48%; /* Sau orice lățime dorită pentru fiecare coloană */
+}
+
+.paragraf-actori,.paragraf-producatori{
+  font-weight: bold;
+}
+
+.arrow-button1 {
+  display: flex;
+  color: #000000;
+  background-color: #d2cdcd;
+  padding: 10px 16px;
+  border-radius: 20px;
+  transition: all .3s ease;
+  font-weight: bold;
+  cursor: pointer;
+  align-items: center;
+  font-size: 15px;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+
+.arrow-button1 > .arrow {
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  position: relative;
+  transform: rotate(-45deg);
+  margin: 0 6px;
+  transition: all .3s ease;
+}
+
+.arrow-button1 > .arrow::before {
+  display: block;
+  background-color: currentColor;
+  width: 3px;
+  transform-origin: bottom right;
+  height: 2px;
+  position: absolute;
+  opacity: 0;
+  bottom: calc(-2px / 2);
+  transform: rotate(45deg);
+  transition: all .3s ease;
+  content: "";
+  right: 0;
+}
+
+.arrow-button1:hover > .arrow {
+  transform: rotate(-45deg) translate(4px, 4px);
+  border-color: text-hover-color;
+}
+
+.arrow-button1:hover > .arrow::before {
+  opacity: 1;
+  width: 8px;
+}
+
+.arrow-button1:hover {
+  background-color: #878585;
+  color: #000000;
+}
+
+.functionalitati {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Alte stiluri pot fi adăugate aici, în funcție de necesități */
+}

@@ -1,0 +1,260 @@
+.login {
+  align-items: center;
+  display: flex;
+  height: fit-content;
+  justify-content: center;
+  margin-top: 30px;
+  border: 5px solid black;
+  z-index: 1000;
+}
+
+.img-login {
+  background-image: url('../Styles/Backgrounds/clapperboard-with-popcorn-reels.jpg');
+  background-position: center;
+  background-size: cover;
+  min-width: 450px;
+  height: 750px;
+}
+.img-login img {
+  height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+.formular-login {
+  background-color: rgba(255, 255, 255, 0.594);
+  border: 1px solid black;
+  min-width: 450px;
+  height: 750px; 
+   text-align: left;
+ 
+}
+.login-content {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins';
+  gap: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  margin-top: 160px;
+}
+.login-content .nume-login,
+.login-content .email-login,
+.login-content .telefon-login,
+.login-content .parola-login,
+.login-content .confirmareParola-login {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #6db1fa;
+  outline: none;
+  transition: border-color 0.3s;
+  border-radius: 5px;
+}
+
+input:focus {
+  border-color: #000000;
+}
+
+.login-page {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+  background-image: url('../Styles/Backgrounds/clapperboard-with-popcorn-reels.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.remember-me {
+  display: flex;
+}
+.remember-me input {
+  width: 15px;
+}
+.remember-me label {
+  margin-right: 10px;
+  margin-top: 18px;
+}
+.conectare {
+  display: flex;
+  gap: 30px;
+}
+.popup-container,.modal-container {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  left: 50%;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+.popup-container .popup {
+  border: 1px solid black;
+  font-size: 16px;
+  text-align: center;
+  width: 500px;
+  font-family: 'Poppins';
+}
+.popup-container .popup .popup-button {
+  background-color: #e1c84a;
+  border: 1px solid black;
+  color: #000000;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 5px 10px;
+  width: fit-content;
+}
+.inapoi-pe-homepage {
+  width: fit-content;
+  height: 40px;
+  border-radius: 5px;
+  border-color: aliceblue;
+  background-color: #e1c84a;
+  color: #000000;
+  font-family: 'Poppins';
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  z-index: 1000;
+}
+
+.modal-container {
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+}
+
+.modal-content  {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+margin: 300px;
+  height: 300px;
+  font-family: 'Poppins';
+}
+
+.modal-container button{
+  background-color: #e1c84a;
+  color: #000000;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 5px 10px;
+  width: fit-content;
+  margin-left: 45%;
+font-weight: bold;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.modal-container button:hover{
+  background-color: #f7d110;
+}
+
+.modal-container h2{
+text-align: center;
+margin-top: 40px;
+}
+
+.modal-container .email-reset{
+  display: flex;
+  flex-direction: column;
+align-items: center;}
+
+.modal-container .forgot-password-form button{
+  margin-left: 42%;
+  margin-top: 30px;
+}
+
+#newPassword{
+  width: 50%;
+}
+
+.parola-login p span{
+  color: rgb(63, 107, 251);
+}
+
+
+@media (max-width: 1024px) {
+  .login {
+    flex-direction: column;
+    align-items: stretch;
+    border: none;
+    margin-top: 0;
+  }
+
+  .img-login {
+    height: 200px;
+    width: 100%;
+    min-width: unset;
+  }
+
+  .formular-login {
+    width: 100%;
+    height: auto;
+    min-width: unset;
+    margin-top: 0;
+  }
+
+  .login-content {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+
+  .buton-inregistrare {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .popup {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  input, select {
+    width: 100%;
+  }
+
+  .conectare {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .remember-me {
+    margin-top: 10px;
+  }
+
+  .inapoi-pe-homepage {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.blur-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(8px); 
+  z-index: 999;
+}

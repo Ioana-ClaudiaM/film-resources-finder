@@ -1,0 +1,10 @@
+.menu-item {
+    white-space: normal; /* Specifică înfășurarea textului */
+  }
+
+  .menu {
+    max-height: 300px; /* Limitarea înălțimii meniului */
+    overflow-y: auto; /* Bară de derulare verticală în caz de depășire a înălțimii */
+  }
+  
+  

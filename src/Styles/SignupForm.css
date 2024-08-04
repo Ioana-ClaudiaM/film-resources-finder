@@ -1,0 +1,191 @@
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  border: 5px solid black;
+  flex-wrap: wrap;
+  max-width: 100%;
+  z-index: 1000;
+}
+
+.img-signup {
+  width: 50%;
+  min-width: 450px;
+  height: 1200px;
+  background-image: url('../Styles/Backgrounds/clapperboard-with-popcorn-reels.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.formular-signup {
+  width: 50%;
+  min-width: 450px;
+  height: 1200px;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  border: 1px solid black;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.signup-content {
+  font-family: 'Poppins';
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nume-signup, .tip-cont-signup, .email-signup, .telefon-signup, .parola-signup, .confirmareParola-signup {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #6db1fa;
+  outline: none;
+  transition: border-color 0.3s;
+  border-radius: 5px;
+}
+
+input:focus {
+  border-color: #000000;
+}
+
+.buton-inregistrare {
+  width: 100%;
+  max-width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  border-color: aliceblue;
+  background-color: #e1c84a;
+  color: #000000;
+  font-family: 'Poppins';
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.signup-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+  background-image: url('../Styles/Backgrounds/clapperboard-with-popcorn-reels.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.password-input-container {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.verificare-cont {
+  margin-top: 2px;
+}
+
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.popup {
+  font-size: 16px;
+  text-align: center;
+  width: 90%;
+  max-width: 300px;
+  border: 1px solid black;
+}
+
+.popup-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #e1c84a;
+  color: #000000;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1024px) {
+  .signup {
+    flex-direction: column;
+    align-items: stretch;
+    border: none;
+    margin-top: 0;
+  }
+ 
+  .img-signup {
+    height: 200px;
+    width: 100%;
+    min-width: unset;
+  }
+
+  .formular-signup {
+    width: 100%;
+    height: auto;
+    min-width: unset;
+    margin-top: 0;
+  }
+
+  .signup-content {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+
+  .buton-inregistrare {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .popup {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  input, select {
+    width: 100%;
+  }
+
+  .inapoi-pe-homepage {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.blur-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundalul este semitransparent pentru un efect de blur */
+  backdrop-filter: blur(8px); /* Aplică efectul de blur */
+  z-index: 999; /* Asigură că este afișat deasupra conținutului */
+}

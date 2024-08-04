@@ -1,0 +1,39 @@
+.buttons-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  
+  .buttons-section button {
+    background-color: #a4ccf7;
+    border: 1px solid black;
+    color: #000000;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Poppins';
+    font-weight: bold;
+  }
+  
+  .buttons-section button.active,
+  .buttons-section button:hover {
+    background-color: #f6d766;
+    transform: scale(1.1);
+  }
+  
+  .buttons-section span {
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  

@@ -1,0 +1,125 @@
+.programari{
+    background-image: url('../Styles/Backgrounds/flat-lay-cinematography-elements-with-copy-space.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.calendar{
+margin-top: 50px;
+}
+
+.calendar-paragraph {
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    color: #000000;
+    text-shadow: 4px 4px 8px rgba(255, 255, 255, 0.8);
+    font-family: 'Poppins';
+}
+
+.custom-calendar {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style for calendar cells */
+  .rbc-day-bg {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  .rbc-day-bg:hover {
+    background-color: #e6e6e6;
+  }
+  
+  /* Style for calendar header */
+  .rbc-header {
+    background-color: #ffcc00;
+    color: #333;
+    font-weight: bold;
+    border: 1px solid #ccc;
+  }
+  
+  /* Style for today */
+  .rbc-today {
+    background-color: #ffeb3b !important;
+  }
+  
+  /* Style for events */
+  .rbc-event {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+  }
+  
+  /* Style for event title */
+  .rbc-event-label, .rbc-event-content {
+    font-weight: bold;
+  }
+  
+  /* Style for time slots */
+  .rbc-time-slot {
+    border: 1px solid #ccc;
+  }
+  
+  /* Style for toolbar */
+  .rbc-toolbar {
+    background-color: #ffcc00;
+    color: #333;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  .rbc-toolbar button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .rbc-toolbar button:hover {
+    background-color: #555;
+  }
+  
+  /* Style for navigation buttons */
+  .rbc-btn-group button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+  }
+  
+  .rbc-btn-group button:hover {
+    background-color: #555;
+  }
+  
+  /* Style for agenda view */
+  .rbc-agenda-content {
+    border: 1px solid #ccc;
+  }
+  
+  .rbc-agenda-table {
+    width: 100%;
+  }
+  
+  .rbc-agenda-table thead {
+    background-color: #ffcc00;
+    color: #333;
+  }
+  
+  .rbc-agenda-table tbody tr {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .rbc-agenda-table tbody tr:hover {
+    background-color: #f5f5f5;
+  }
+  
